@@ -16,9 +16,15 @@ class Rect {
     this.width = l;
     this.height = l;
   }
+
+  get side() {
+    if (this.width !== this.height) throw new Error('not a Square');
+    return this.width;
+  }
 }
 
 const p1 = new Rect(10, 20, 50, 100);
+console.log(p1.side);
 console.log(p1.area);
 p1.side = 150;
 console.log(p1.area);

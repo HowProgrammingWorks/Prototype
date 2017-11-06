@@ -1,8 +1,8 @@
 'use strict';
 
 class Logger {
-  constructor(level) {
-    this.color = this.colors[level] || this.colors.info;
+  constructor(level = 'info') {
+    this.color = Logger.colors[level] || Logger.colors.info;
   }
 
   log(s) {
@@ -11,7 +11,7 @@ class Logger {
   }
 }
 
-Logger.prototype.colors = {
+Logger.colors = {
   warning: '\x1b[1;33m',
   error: '\x1b[0;31m',
   info: '\x1b[1;37m'
