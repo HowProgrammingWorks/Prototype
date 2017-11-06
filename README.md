@@ -1,2 +1,1 @@
-# PrototypeOrientedProgramming
-Prototype-oriented programming
+# Prototype
