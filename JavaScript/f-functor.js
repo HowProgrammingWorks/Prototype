@@ -1,20 +1,15 @@
 'use strict';
 
-const util = require('util');
-
-function Functor() {
-}
+function Functor() {}
 
 Functor.prototype.method = function() {
   console.log('Functor.prototype.method');
   console.dir({
     property: this.property,
-    exec: this.method
+    method: this.method
   });
   this(); // you can call this as a function
 };
-
-util.inherits(Functor, Function);
 
 const factory = () => {
 
@@ -29,6 +24,7 @@ const factory = () => {
 
   Object.setPrototypeOf(functor, Functor.prototype);
   return functor;
+
 };
 
 // Usage

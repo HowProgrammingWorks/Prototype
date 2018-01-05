@@ -24,6 +24,7 @@ const factory = () => {
 
   Object.setPrototypeOf(functor, Functor.prototype);
   return functor;
+
 };
 
 // Usage
