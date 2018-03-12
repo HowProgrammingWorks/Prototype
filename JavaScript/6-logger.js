@@ -1,6 +1,6 @@
 'use strict';
 
-const logger = (level = 'info') => {
+const logger = (level) => {
   const color = logger.colors[level] || logger.colors.info;
   return s => {
     const date = new Date().toISOString();

@@ -1,6 +1,6 @@
 'use strict';
 
-function Logger(level = 'info') {
+function Logger(level) {
   this.color = Logger.colors[level] || Logger.colors.info;
 }
 

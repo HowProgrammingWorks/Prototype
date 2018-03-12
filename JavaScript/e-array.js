@@ -23,6 +23,9 @@ class Person {
     const difference = new Date() - new Date(this.birth);
     return Math.floor(difference / 31536000000);
   }
+  toString() {
+    return this.name + ' age is ' + this.age;
+  }
 }
 
 const query = (person) => (
@@ -39,4 +42,4 @@ data.forEach(person => {
 });
 
 const res = data.filter(query);
-console.dir(res);
+console.dir(res + '');

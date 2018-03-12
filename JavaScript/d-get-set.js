@@ -24,7 +24,7 @@ class Rect {
 }
 
 const p1 = new Rect(10, 20, 50, 100);
-console.log(p1.side);
 console.log(p1.area);
 p1.side = 150;
+console.log(p1.side);
 console.log(p1.area);

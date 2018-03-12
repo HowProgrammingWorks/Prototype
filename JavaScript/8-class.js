@@ -1,7 +1,7 @@
 'use strict';
 
 class Logger {
-  constructor(level = 'info') {
+  constructor(level) {
     this.color = Logger.colors[level] || Logger.colors.info;
   }
 
