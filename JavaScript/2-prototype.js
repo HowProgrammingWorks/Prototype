@@ -5,6 +5,11 @@ function Point(x, y) {
   this.y = y;
 }
 
+Point.from = function(obj) {
+  const { x, y } = obj;
+  return new Point(x, y);
+};
+
 Point.prototype.move = function(x, y) {
   this.x += x;
   this.y += y;

@@ -14,6 +14,11 @@ class Point {
   toString() {
     return `[${this.x}, ${this.y}]`;
   }
+
+  static from(obj) {
+    const { x, y } = obj;
+    return new Point(x, y);
+  }
 }
 
 console.log(
