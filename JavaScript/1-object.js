@@ -7,13 +7,16 @@ const p1 = {
     this.x += x;
     this.y += y;
   },
-  toString() {
+  toString () {
     return `[${this.x}, ${this.y}]`;
   }
 };
 
 p1.move(-5, 10);
 
-console.log(p1);
-console.log(p1.toString());
-console.log(p1 + '');
+console.log(p1); /* { x: 5,
+                      y: 30,
+                      move: [Function: move],
+                      toStringL: [Function: toString] }*/
+console.log(p1.toString()); // [5 , 30]
+console.log(p1 + ''); // [5, 30]

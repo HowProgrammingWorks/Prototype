@@ -34,7 +34,13 @@ const query = (person) => (
   person.city === 'Rome'
 );
 
-console.dir(data);
+console.dir(data);/*[ ['Marcus Aurelius', '212-04-26', 'Rome'],
+                      ['Commodus Antoninus', '312-04-26', 'Rome'],
+                      ['Victor Glushkov', '1923-08-24', 'Rostov on Don'],
+                      ['Ibn Arabi', '1165-11-16', 'Murcia'],
+                      ['Mao Zedong', '1893-12-26', 'Shaoshan'],
+                      ['Rene Descartes', '1596-03-31', 'La Haye en Touraine']
+                    ];*/
 
 data.forEach(person => {
   Object.setPrototypeOf(person, Person.prototype);
@@ -42,4 +48,4 @@ data.forEach(person => {
 });
 
 const res = data.filter(query);
-console.dir(res + '');
+console.dir(res + ''); // 'Marcus Aurelius ase is 1807, Commodus Antoninus ase is 1707'

@@ -20,7 +20,7 @@ const error = new Logger('error');
 const debug = new Logger('debug');
 const slow = new Logger('slow');
 
-slow.log('I am slow logger');
-warning.log('Hello');
-error.log('World');
-debug.log('Bye!');
+slow.log('I am slow logger'); // DateTime   I am slow logger
+warning.log('Hello'); // DateTime   Hello //#yellow
+error.log('World'); // DateTime   World //#red
+debug.log('Bye!'); // DateTime    Bye!

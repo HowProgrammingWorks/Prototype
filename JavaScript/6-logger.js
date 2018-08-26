@@ -19,7 +19,7 @@ const error = logger('error');
 const debug = logger('debug');
 const slow = logger('slow');
 
-slow('I am slow logger');
-warning('Hello');
-error('World');
-debug('Bye!');
+slow('I am slow logger'); // DateTime   I am slow logger
+warning('Hello'); // DateTime   Hello //#yellow
+error('World'); // DateTime   World //#red
+debug('Bye!'); // DateTime    Bye!
