@@ -5,7 +5,7 @@ class Functor extends Function {
     console.log('Functor.prototype.method');
     console.dir({
       property: this.property,
-      method: this.method
+      method: this.method,
     });
     this(); // you can call this as a function
   }
@@ -18,7 +18,7 @@ const factory = () => {
     functor.property = 'value';
     console.dir({
       property: functor.property,
-      method: functor.method
+      method: functor.method,
     });
   };
 

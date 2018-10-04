@@ -9,7 +9,7 @@ const p1 = {
   },
   toString() {
     return `[${this.x}, ${this.y}]`;
-  }
+  },
 };
 
 p1.move(-5, 10);

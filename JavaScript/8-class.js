@@ -14,7 +14,7 @@ class Logger {
 Logger.colors = {
   warning: '\x1b[1;33m',
   error: '\x1b[0;31m',
-  info: '\x1b[1;37m'
+  info: '\x1b[1;37m',
 };
 
 const warning = new Logger('warning');
