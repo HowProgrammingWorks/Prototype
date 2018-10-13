@@ -17,6 +17,8 @@ Logger.colors = {
   info: '\x1b[1;37m',
 };
 
+// Usage
+
 const warning = new Logger('warning');
 const error = new Logger('error');
 const debug = new Logger('debug');

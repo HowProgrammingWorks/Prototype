@@ -15,6 +15,8 @@ Logger.prototype.log = function(s) {
   console.log(this.color + date + '\t' + s);
 };
 
+// Usage
+
 const warning = new Logger('warning');
 const error = new Logger('error');
 const debug = new Logger('debug');

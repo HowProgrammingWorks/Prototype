@@ -21,22 +21,9 @@ class Point {
   }
 }
 
-console.log(
-  'Point prototype:',
-  Point.prototype
-);
-console.log(
-  'move prototype:',
-  Point.prototype.move.prototype
-);
-console.log(
-  'constructor prototype:',
-  Point.constructor.prototype
-);
-console.log(
-  'prototype constructor prototype:',
-  Point.prototype.constructor.prototype
-);
+console.log('Point prototype:', Point.prototype);
+console.log('move prototype:', Point.prototype.move.prototype);
+console.log('constructor prototype:', Point.constructor.prototype);
 
 const p1 = new Point(10, 20);
 p1.move(-5, 10);

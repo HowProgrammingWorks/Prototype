@@ -18,7 +18,7 @@ function Square(x, y, side) {
 Object.setPrototypeOf(Square.prototype, Rect.prototype);
 
 // const util = require('util');
-// util.inherits(Square, Rect);
+// util.inherits(Square, Rect); // for Node.js
 
 // Square.prototype = Object.create(Rect.prototype);
 // Square.prototype.constructor = Square;
