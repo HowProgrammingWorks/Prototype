@@ -42,4 +42,4 @@ data.forEach(person => {
 });
 
 const res = data.filter(query);
-console.dir(res + '');
+console.log(res.join('\n'));
