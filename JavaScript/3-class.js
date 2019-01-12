@@ -21,6 +21,13 @@ class Point {
   }
 }
 
+const point1 = new Point(0, 0);
+point1.move(1, -1);
+point1.move(10, 0);
+
+const point2 = Point.from(point1);
+point2.move(-7, 25);
+
 console.log('Point prototype:', Point.prototype);
 console.log('move prototype:', Point.prototype.move.prototype);
 console.log('constructor prototype:', Point.constructor.prototype);
