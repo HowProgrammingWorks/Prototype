@@ -27,4 +27,7 @@ Object.setPrototypeOf(Square.prototype, Rect.prototype);
 // Square.prototype.constructor = Square;
 
 const p1 = new Square(10, 20, 50);
+
+console.log(p1);
 console.log(p1.toString());
+console.log(`${p1}`);

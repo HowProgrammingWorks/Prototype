@@ -18,4 +18,4 @@ p1.move(-5, 10);
 
 console.log(p1);
 console.log(p1.toString());
-console.log(p1 + '');
+console.log(`${p1}`);

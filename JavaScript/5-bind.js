@@ -16,4 +16,4 @@ p1move(-5, 10);
 
 console.log(p1);
 console.log(p1toString());
-console.log(p1 + '');
+console.log(`${p1}`);
