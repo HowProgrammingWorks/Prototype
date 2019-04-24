@@ -1,7 +1,7 @@
 'use strict';
 
-function Logger(level) {
-  this.color = Logger.colors[level] || Logger.colors.info;
+function Logger(kind) {
+  this.color = Logger.colors[kind] || Logger.colors.info;
 }
 
 Logger.colors = {
