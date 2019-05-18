@@ -1,8 +1,8 @@
 'use strict';
 
 const data = [
-  ['Marcus Aurelius', '212-04-26', 'Rome'],
-  ['Commodus Antoninus', '312-04-26', 'Rome'],
+  ['Marcus Aurelius', '121-04-26', 'Rome'],
+  ['Commodus Antoninus', '161-08-31', 'Rome'],
   ['Victor Glushkov', '1923-08-24', 'Rostov on Don'],
   ['Ibn Arabi', '1165-11-16', 'Murcia'],
   ['Mao Zedong', '1893-12-26', 'Shaoshan'],
