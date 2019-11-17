@@ -13,16 +13,20 @@ class Person {
   get name() {
     return this[0];
   }
+
   get birth() {
     return this[1];
   }
+
   get city() {
     return this[2];
   }
+
   get age() {
     const difference = new Date() - new Date(this.birth);
     return Math.floor(difference / 31536000000);
   }
+
   toString() {
     return this.name + ' age is ' + this.age;
   }
