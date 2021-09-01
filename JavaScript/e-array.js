@@ -32,7 +32,7 @@ class Person {
   }
 }
 
-const query = person => (
+const query = (person) => (
   person.name !== '' &&
   person.age > 18 &&
   person.city === 'Rome'
@@ -40,7 +40,7 @@ const query = person => (
 
 console.dir(data);
 
-data.forEach(person => {
+data.forEach((person) => {
   Object.setPrototypeOf(person, Person.prototype);
   // person.__proto__ = Person.prototype
 });
